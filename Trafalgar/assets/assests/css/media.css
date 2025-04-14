@@ -1,0 +1,88 @@
+@media screen and (max-width: 1166px){
+    ul.flex{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        justify-content: center;
+        width: 100%;
+        top: 81px; 
+        left: 0;
+        background-color: #ffffffa9;
+        backdrop-filter: blur(10px);
+        padding: 20px 0;
+
+    }
+    nav{
+        position: relative;
+        padding: 20px  0;
+        z-index: 99999999;
+        position: fixed;
+        width: 100%;
+        background-color: white;
+        top: 0;
+    }
+  
+    #menu-check:checked~ ul.flex{
+     display: flex;
+    }
+   #menu-check:checked~ label .open{
+    display: none;
+    }
+    #menu-check:checked~ label .close{
+        display: inline;
+        }
+        .close{
+            display: none;
+        }
+        label .open{display: inherit;}
+
+        header .flex{
+            flex-direction: column-reverse;
+            gap:3rem;
+        }
+        header{
+            margin:3rem 0;
+        }
+        .header-content{
+            max-width: 100%;
+        }
+        .services .card{
+            max-width: 100%;
+        }
+        .services .cards_pg{
+            width: 100%;
+        }
+        .article .card{
+            width: 45%;
+            max-width: 100%;
+        }
+        .testimonial.flex{
+            flex-direction: column;
+            gap: 40px;
+        }
+        .testimonial .content, .testimonial q{
+         width:100%;
+        }
+        .section-3 .flex{
+            flex-direction: column-reverse;
+            gap:3rem;
+            margin: 30px;
+        }
+        .section-4 .flex{
+            flex-direction: column-reverse;
+            gap:3rem;
+            margin: 30px;
+        }
+        footer .flex{
+            flex-direction: column;
+            gap: 3rem;
+        }
+    
+        
+        
+} 
+@media screen and (max-width:768px){
+    .article .card{
+        width: 100%;
+    }
+}
